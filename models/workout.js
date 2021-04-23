@@ -20,17 +20,23 @@ const workoutSchema = new Schema({
         trim: true,
         required: "Please choose an exercise name",
       },
-      duration: {
+      weight: {
         type: Number,
       },
-      weight: {
+      sets: {
         type: Number,
       },
       reps: {
         type: Number,
       },
+      distance: {
+        type: Number,
+      },
       duration: {
-        sets: Number,
+        type: Number,
+      },
+      totalDuration: {
+        type: Number,
       },
     },
   ],
