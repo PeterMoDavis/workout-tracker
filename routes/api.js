@@ -32,15 +32,15 @@ router.get("/api/workouts", (req, res) => {
   ]).then((dbWorkouts) => {
     res.json(dbWorkouts);
   });
-
-  Workout.find({})
-    .then((dbWorkout) => {
-      res.json(dbWorkout);
-    })
-    .catch((err) => {
-      res.json(err);
-    });
 });
+
+// Workout.find({})
+//   .then((dbWorkout) => {
+//     res.json(dbWorkout);
+//   })
+//   .catch((err) => {
+//     res.json(err);
+//   });
 
 router.get("/api/workouts/range", (req, res) => {
   Workout.aggregate([
